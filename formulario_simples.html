@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="processa_form.php" method="post">
+
+            <fieldset>
+                <legend>Dados Gerais</legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" minlength="3" id="Nome" name="nome" required>
+
+                <label for="data_nascimento">Data Nascimento</label>
+                <input type="text" id="data_nascimento" name="data_nascimento" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" maxlength="11" minlength="11" id="cpf" name="CPF" placeholder="18495589737" required>
+
+                <label for="Tel"> Telefone Celular</label>
+                <input type="tel" maxlength="13" minlength="13" name="Tel" id="Tel" placeholder="22-99701-7776" pattern="[0-9]{2}-[0-9]{4-5}[0-9]{4-5}" required> 
+            </fieldset>
+            <fieldset>
+                <legend>Endereco</legend>
+
+                <label for="Rua">Rua</label>
+                <input type="text" id="Rua" name="Rua">
+
+                <label for="Numero">Numero</label>
+                <input type="text" id="Numero" name="numero">
+
+                <label for="cidade">cidade</label>
+                <input type="text" name="cidade" id="cidade">
+
+                <label for="estado">Estado</label>
+                <input type="text" name="Estado" id="Estado">
+
+                <label for="Pais">pais</label>
+                <input type="text" name="Pais" id="Pais">
+            </fieldset>
+            <fieldset>
+                <legend>Fale Conosco</legend>
+
+                <label for="tipo_mensagem">Tipo De Mensagem</label>
+                <input type="radio" name="tipo_msg" id="Reclamacao">
+                <label for="radio">Reclamacao</label>
+                <input type="radio" name="tipo_msg" id="elogio">
+                <label for="radio">elogio</label>   
+                <input type="radio" name="tipo_msg" id="sugestao">
+                <label for="radio">sugestao</label>
+                <br>
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit"> Enviar Sua Mensagem</button>
+                <button type="reset">Limpar Formulario</button>
+            </fieldset>
+        </form>    
+    </body>
+</html>
