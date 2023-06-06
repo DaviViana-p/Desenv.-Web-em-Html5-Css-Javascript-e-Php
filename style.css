@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(0, 0, 0, 0.3);    
+}
+h1{
+    padding-left:47%;
+}
+#Navegacao{
+    background-color: rgb(94, 255, 0);
+    display: flex;
+    margin-right: 30px;
+}
+.nav-bar{
+    padding-left: 15%;
+    list-style-type: none;
+}
+#footer{
+    background-color: aqua;
+    padding-left: 47%;
+}
+.animes{
+    background-color: bisque;
+    display: inline-block;
+    margin: 5px red;
+    padding: 10px;
+}
+#main{
+    padding-left: 4%;
+}
