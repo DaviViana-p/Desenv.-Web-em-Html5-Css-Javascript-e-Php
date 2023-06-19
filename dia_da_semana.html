@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Incorporando Javascript em Páginas HTML</title>	
+	<script src="script.js"></script>
+</head>
+<body>
+	
+</body>
+	    
+        <script type="text/javascript">
+        //new Date().getDay() retorna o dia da semana (0, 2,..., 6)
+            var num_dia = new Date().getDay();
+            console.log(num_dia)
+            //var num_dia = 2
+
+            switch(num_dia){
+                case 0 :
+                    dia = "Domingo"
+                    break; 
+                case 1 :
+                    dia = "Segunda"
+                    break;
+                case 2 :
+                    dia = "terça"
+                    break;
+                case 3 :
+                    dia = "quarta"
+                    break;
+                case 4 :
+                    dia = "quinta"
+                    break;
+                case 5 : 
+                    dia = "sexta"
+                    break;
+                case 6 :
+                    dia = "sabado"
+                    break;
+            }
+            console.log("O dia da semana é:", dia);
+                    
+	</script>
+</html>
