@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Incorporando Javascript em Páginas HTML</title>	
+	<script src="script.js"></script>
+</head>
+<body>
+	<div id="exibe_resultado"> Resultado da Multiplicação:  </div>
+</body>
+	    
+        <script type="text/javascript">
+        var dividendo1 = prompt("digite um numero");
+        var dividendo2 = prompt("digite outro numero");
+        var operacao = prompt("qual operação deseja realizar? soma subtração multiplicação ou divisao ");
+
+        var resultado = 0;
+
+        if(operacao == 'soma'){
+            var resultado = soma(dividendo1, dividendo2);
+        }
+        if(operacao == 'subtração'){
+            var resultado = subtracao(dividendo1, dividendo2);
+        }
+        if(operacao == 'multiplicação'){
+            var resultado = multiplique(dividendo1, dividendo2);
+        }
+        if(operacao == 'divisao'){
+            var resultado = divisao(dividendo1, dividendo2);
+        }   
+		alert('o resultado é :' + resultado); 
+        
+        
+        // funções
+
+		function soma(dividendo1, dividendo2){
+            var resultado = 0
+            resultado = parseInt(dividendo1) + parseInt(dividendo2);
+            return resultado;
+        }
+        function subtracao(dividendo1, dividendo2){
+            var resultado = 0
+            resultado = parseInt(dividendo1) - parseInt(dividendo2);
+            return resultado;
+        }            
+        function divisao (dividendo1, dividendo2){
+            
+            var resultado = 0;
+
+            resultado = dividendo1 / dividendo2;
+
+            return resultado;
+        }
+		function multiplique(dividendo1, dividendo2){
+     			
+			var resultado = 0;    
+            
+            resultado = dividendo1 * dividendo2;      
+		
+			return resultado;
+     
+		}
+	</script>
+</html>
